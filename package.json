@@ -2,6 +2,7 @@
   "name": "app-edt",
   "main": "node_modules/expo/AppEntry.js",
   "version": "1.0.0",
+  "Homepage": "https://eviaan.github.io/timetable-webapp"
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
@@ -9,7 +10,9 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "test": "jest --watchAll",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "jest": {
     "preset": "jest-expo"
